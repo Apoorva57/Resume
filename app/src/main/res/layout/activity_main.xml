@@ -1,0 +1,659 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:id="@+id/layout"
+    android:layout_height="match_parent"
+    android:background="#3756FF">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:backgroundTint="#80D8FF">
+            <TextView
+                android:id="@+id/resume_head"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Resume"
+                android:textStyle="bold"
+                android:textSize="25sp"
+                android:gravity="center"
+                android:textColor="@color/white"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:id="@+id/card"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="6dp"
+                app:cardUseCompatPadding="true"
+                android:backgroundTint="#3DA9FF">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp">
+
+                    <ImageView
+                        android:id="@+id/header_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"
+                        android:layout_marginTop="8dp"
+                        android:src="@drawable/image"
+                        app:layout_constraintBottom_toTopOf="@id/name"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/name"
+                        style="@style/TextAppearance.MaterialComponents.Headline3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="Apoorva"
+                        android:textColor="@color/white"
+                        android:textAlignment="center"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/header_image" />
+
+                    <TextView
+                        android:id="@+id/subhead"
+                        style="@style/TextAppearance.MaterialComponents.Subtitle2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="Android developer, UI/UX designer and ML Enthusiast"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        android:textAlignment="center"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/name" />
+
+                    <TextView
+                        android:id="@+id/body"
+                        style="@style/TextAppearance.MaterialComponents.Body1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="Energetic and inquisitive developer with excellent communication skills. I am eager to support the team as a team player and constantly expand my skill sets by learning from others. I wish to deliver an incredible user experience with my products and services because I believe that we can create numerous solutions to solve society’s issues with technology. I would like to implement my innovative ideas, skills, and creativity to enhance the team's productivity and reputation."
+                        app:layout_constraintEnd_toEndOf="parent"
+                        android:textStyle="italic"
+                        android:textAlignment="center"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/subhead" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/heading1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Education"
+                android:textSize="24sp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:textStyle="bold"
+                android:textColor="@color/white" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:id="@+id/card2"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="6dp"
+                app:cardUseCompatPadding="true"
+                android:backgroundTint="#008DFD">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+            <TableLayout
+                android:id="@+id/table_layout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:stretchColumns="*">
+
+            <TableRow>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Board"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:background="#008DFD"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Tenure"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:background="#008DFD"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="CGPA / %"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:background="#008DFD"/>
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="B.Tech (CSE)"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:background="#008DFD"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="July 21 - ongoing"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:textColor="@color/white"
+                    android:background="#3DA9FF"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="9.09"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:textColor="@color/white"
+                    android:background="#3DA9FF"/>
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Class XII"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:background="#008DFD"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="May 18"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:textColor="@color/white"
+                    android:background="#3DA9FF"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="75.8%"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:textColor="@color/white"
+                    android:background="#3DA9FF"/>
+            </TableRow>
+                <TableRow>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Class X"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:background="#008DFD"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="May 16"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:textColor="@color/white"
+                        android:background="#3DA9FF"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="9.2"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:textColor="@color/white"
+                        android:background="#3DA9FF" />
+                </TableRow>
+            </TableLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/heading2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Projects"
+                android:textSize="24sp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:textStyle="bold"
+                android:textColor="@color/white" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:id="@+id/card3"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="6dp"
+                app:cardUseCompatPadding="true"
+                android:backgroundTint="#3DA9FF">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp">
+                    <TableLayout
+                        android:id="@+id/table_layout2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        android:stretchColumns="*">
+
+                        <TableRow>
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:text="Android Development: Grocery App (September 22)"
+                                android:gravity="center_horizontal"
+                                android:layout_gravity="center_vertical"
+                                android:textAlignment="center"
+                                android:padding="5dp"
+                                android:textColor="@color/white"
+                                android:textStyle="bold"
+                                android:background="#3DA9FF"/>
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:text="As we can't remember everything, users frequently forget to buy what they want. However, with the assistance of this Grocery App, they can make a list of the groceries they intend to buy so that they don't forget anything. Technology: Kotlin, Android Studio. Team Size: Individual."
+                                android:gravity="center"
+                                android:padding="5dp"
+                                android:textColor="@color/white"
+                                android:background="#008DFD"/>
+                        </TableRow>
+                        <TableRow>
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:text="Machine Learning: NLP Model (Oct 22 - Nov 22"
+                                android:gravity="center_horizontal"
+                                android:layout_gravity="center_vertical"
+                                android:textAlignment="center"
+                                android:padding="5dp"
+                                android:textStyle="bold"
+                                android:textColor="@color/white"
+                                android:background="#3DA9FF"/>
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:text="Natural Language Processing (NLP) enables machine learning algorithms to organize and understand human language. NLP enables machines to gather text and speech and identify the core meaning they should respond to. The model performs all the processes of NLP on English as well as Hindi corpus. Technology: Kaggle, Python and Google Colab. Team Size: Individual."
+                                android:gravity="center"
+                                android:padding="5dp"
+                                android:textColor="@color/white"
+                                android:background="#008DFD"/>
+                        </TableRow>
+                    </TableLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+            <TextView
+                android:id="@+id/heading3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Internships"
+                android:textSize="24sp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:textStyle="bold"
+                android:textColor="@color/white" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:id="@+id/card4"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="6dp"
+                app:cardUseCompatPadding="true"
+                android:backgroundTint="#008DFD">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp">
+                    <TableLayout
+                        android:id="@+id/table_layout3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        android:stretchColumns="*">
+
+                        <TableRow>
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:text="Google-Supported Virtual Internship Program     Aug 22 – Sep 22"
+                                android:gravity="center_horizontal"
+                                android:layout_gravity="center_vertical"
+                                android:textAlignment="center"
+                                android:padding="5dp"
+                                android:textColor="@color/white"
+                                android:textStyle="bold"
+                                android:background="#008DFD"/>
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:text="Android Development Internship in collaboration with AICTE and Smart Internz. Completed the course curated by Google for Android development: “Android Basics in Kotlin”. Created the final project for the internship based on the prompt to make a to-do list application using the knowledge acquired by the course."
+                                android:gravity="center"
+                                android:padding="5dp"
+                                android:textColor="@color/white"
+                                android:background="#3DA9FF"/>
+                        </TableRow>
+                        <TableRow>
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:text="Appian Internship         Aug 23 – Nov 23"
+                                android:gravity="center_horizontal"
+                                android:layout_gravity="center_vertical"
+                                android:textAlignment="center"
+                                android:textStyle="bold"
+                                android:padding="5dp"
+                                android:textColor="@color/white"
+                                android:background="#008DFD"/>
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:text="Appian Internship Program with Ethnus. Gained a thorough understanding of Appian's features and functionalities through structured learning modules designed to cover various aspects of low-code development, automation, and workflow management."
+                                android:gravity="center"
+                                android:padding="5dp"
+                                android:textColor="@color/white"
+                                android:background="#3DA9FF"/>
+                        </TableRow>
+                    </TableLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/heading4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Certifications"
+                android:textSize="24sp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:textStyle="bold"
+                android:textColor="@color/white" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:id="@+id/card5"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="6dp"
+                app:cardUseCompatPadding="true"
+                android:backgroundTint="#3DA9FF">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp">
+                    <TableLayout
+                        android:id="@+id/table_layout4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        android:stretchColumns="*">
+
+                        <TableRow>
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:text="Certification"
+                                android:gravity="center_horizontal"
+                                android:layout_gravity="center_vertical"
+                                android:textAlignment="center"
+                                android:padding="5dp"
+                                android:textColor="@color/white"
+                                android:textStyle="bold"
+                                android:background="#3DA9FF"/>
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:text="Issued by"
+                                android:gravity="center_horizontal"
+                                android:layout_gravity="center_vertical"
+                                android:textAlignment="center"
+                                android:padding="5dp"
+                                android:textColor="@color/white"
+                                android:textStyle="bold"
+                                android:background="#3DA9FF"/>
+                        </TableRow>
+                        <TableRow>
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:text="The Bits and Bytes of Computer Networking"
+                                android:gravity="center_horizontal"
+                                android:layout_gravity="center_vertical"
+                                android:textAlignment="center"
+                                android:textStyle="bold"
+                                android:padding="5dp"
+                                android:textColor="@color/white"
+                                android:background="#008DFD"/>
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:text="Google, Coursera. January 11 2023"
+                                android:gravity="center"
+                                android:padding="5dp"
+                                android:textStyle="bold"
+                                android:textColor="@color/white"
+                                android:background="#008DFD"/>
+                        </TableRow>
+                        <TableRow>
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:text="•	SQL (Basic, Intermediate and Advanced) Certificate"
+                                android:gravity="center_horizontal"
+                                android:layout_gravity="center_vertical"
+                                android:textAlignment="center"
+                                android:textStyle="bold"
+                                android:padding="5dp"
+                                android:textColor="@color/white"
+                                android:background="#3DA9FF"/>
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:text="HackerRank. February 15 2023"
+                                android:gravity="center"
+                                android:textStyle="bold"
+                                android:padding="5dp"
+                                android:textColor="@color/white"
+                                android:background="#3DA9FF"/>
+                        </TableRow>
+                        <TableRow>
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:text="Google Cloud Digital Leader"
+                                android:gravity="center_horizontal"
+                                android:layout_gravity="center_vertical"
+                                android:textAlignment="center"
+                                android:textStyle="bold"
+                                android:padding="5dp"
+                                android:textColor="@color/white"
+                                android:background="#008DFD"/>
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:text="Google. February 9 2024"
+                                android:gravity="center"
+                                android:padding="5dp"
+                                android:textStyle="bold"
+                                android:textColor="@color/white"
+                                android:background="#008DFD"/>
+                        </TableRow>
+                    </TableLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/heading5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Extra-curricular and Achievements"
+                android:textSize="24sp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:textStyle="bold"
+                android:textColor="@color/white" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:id="@+id/card6"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="6dp"
+                app:cardUseCompatPadding="true"
+                android:backgroundTint="#008DFD">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp">
+                    <TableLayout
+                        android:id="@+id/table_layout5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        android:stretchColumns="*">
+
+                        <TableRow>
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:text="Achievements"
+                                android:gravity="center_horizontal"
+                                android:layout_gravity="center_vertical"
+                                android:textAlignment="center"
+                                android:padding="5dp"
+                                android:textColor="@color/white"
+                                android:textStyle="bold"
+                                android:background="#008DFD"/>
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:text="- Third Place, GDSC Codescape (Intra-University Coding competition) (April 22)
+
+                                - First Place, Orion Odyssey Ideathon (Intra University Space Ideathon) (July 23)"
+                                android:gravity="center_horizontal"
+                                android:layout_gravity="center_vertical"
+                                android:textAlignment="center"
+                                android:padding="5dp"
+                                android:textColor="@color/white"
+                                android:textStyle="bold"
+                                android:background="#3DA9FF"/>
+                        </TableRow>
+                        <TableRow>
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:text="Responsibilities"
+                                android:gravity="center_horizontal"
+                                android:layout_gravity="center_vertical"
+                                android:textAlignment="center"
+                                android:textStyle="bold"
+                                android:padding="5dp"
+                                android:textColor="@color/white"
+                                android:background="#008DFD"/>
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:text="- GDSC VIT Bhopal: Android team member (Jan 22 – Sep 22), Android Lead (Sep 22- August 23)
+- Meraki – The Fine Arts Club: Décor Core member (Mar 22 – Feb 23), President (Feb 23 – Present)
+- Student Council of VIT Bhopal University: Cultural Secretary (August 23 – Present)"
+                                android:gravity="center"
+                                android:padding="5dp"
+                                android:textColor="@color/white"
+                                android:background="#3DA9FF"/>
+                        </TableRow>
+                        <TableRow>
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:text="Extracurricular"
+                                android:gravity="center_horizontal"
+                                android:layout_gravity="center_vertical"
+                                android:textAlignment="center"
+                                android:textStyle="bold"
+                                android:padding="5dp"
+                                android:textColor="@color/white"
+                                android:background="#008DFD"/>
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:text="Third Place, AdVITya’22 (Intra-University best out of waste competition) (April 22)
+- First Place, 75th Independence Day Tournament (Intra-University Table Tennis Competition) (August 22)"
+                                android:gravity="center"
+                                android:padding="5dp"
+                                android:textColor="@color/white"
+                                android:background="#3DA9FF"/>
+                        </TableRow>
+                    </TableLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+
